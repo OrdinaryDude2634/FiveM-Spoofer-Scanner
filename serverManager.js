@@ -1,4 +1,4 @@
-export class serverManager {
+export class ServerManager {
     static async getPlayers(serverID) {
         let response = await fetch(`https://servers-frontend.fivem.net/api/servers/single/${serverID}`, {
             cache: 'no-store',
