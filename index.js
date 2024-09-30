@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { UI } from './UI.js';
 import { getAccountAge, sleep } from './utils.js';
-import { ServerManager } from './serverManager.js';
+import { ServerManager } from './ServerManager.js';
 
 
 let ID;
