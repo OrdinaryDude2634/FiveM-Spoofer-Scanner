@@ -18,6 +18,7 @@ export async function getAccountAge(steamHex, timeout) {
     const match = (await response.text()).match(/was created\s*on ([\w\s,]+)/);
     return howLongSinceDateInMonths(match[1]);
 }
+
 export function sleep(milliseconds) {
     return new Promise(resolve => setTimeout(resolve, milliseconds));
 }
