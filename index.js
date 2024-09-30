@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { UI } from './UI.js';
 import { getAccountAge, sleep } from './utils.js';
-import { serverManager } from './serverManager.js';
+import { ServerManager } from './serverManager.js';
 
 
 let ID;
@@ -28,7 +28,7 @@ while (true) {
 }
 
 console.log(chalk.yellow(`Fetching ${ID}`));
-let players = await serverManager.getPlayers(ID);
+let players = await ServerManager.getPlayers(ID);
 if (players == 404) {
     console.log(chalk.red('The provided server ID dosen\'t exist\nExiting in 3 seconds...'));
     await sleep(3000);
